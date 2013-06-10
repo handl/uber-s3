@@ -1,7 +1,7 @@
 class UberS3  
   class Response
     
-    attr_accessor :status, :header, :body, :raw, :error_key, :error_message
+    attr_accessor :status, :header, :body, :raw, :error_key, :error_message, :response
     
     def initialize(options={})
       if !([:status, :header, :body, :raw] - options.keys).empty?
