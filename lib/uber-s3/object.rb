@@ -96,8 +96,7 @@ class UberS3
       # Update error state
       self.error = response.error
       
-      # Test for success....
-      response.status == 200      
+      response   # CHANGE:  return deferrable obj instead of boolean
     end
     
     def delete
