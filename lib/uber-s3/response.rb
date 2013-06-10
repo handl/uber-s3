@@ -12,7 +12,8 @@ class UberS3
       self.header = options[:header]
       self.body   = options[:body]
       self.raw    = options[:raw]
-      
+      self.response    = options[:response]
+
       success?
     end
     
